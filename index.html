@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Formulario</title>
+</head>
+<body>
+     <section>
+        <h1>Preencha os Dados</h1>
+
+        <p>Preencha o formulário abaixo com o que se pede 
+            para sua candidatura.
+        </p>
+
+    <form id="form" name="form">
+        <label for="name">Nome Completo*</label>
+          <input type="name" name="name" placeholder="digite seu nome"requerid>
+        <label for="emal">E-mail</label>
+          <input type="email" name="email" placeholder="exemplo@gmail.com" required>
+        <label for="idade">Idade*</label>
+          <input type="text" name="age" placeholder="Digite sua idade"requerid>
+        <label for="subject"> Filhos *</label>
+          <input type="number" name="filhos" placeholder="0" required>
+        <label for="date">Data para avaliação</label>
+          <input type="date" name="data" >
+        <label for="select">Escolha o estado</label>
+          <select name="select" name="subject">
+            <option value="Recife">Recife</option>
+            <option value="Sao paulo">Sao paulo</option>
+            <option value="Rio de janeiro">Rio de Janeiro</option>
+            <option value="Amazonas">Amazonas</option>
+            <option value="Bahia">Bahia</option>
+            <option value="Fortaleza">Fortaleza</option>
+          </select>
+   
+            <p>Quais Horarios ?*</p>
+            <div class="radio-inputs-wrapper">
+              <label for="morning">
+                <input type="checkbox" name="availableShifts" id="morning" value="morning" />
+                Manhã
+              </label>
+              <label for="afternoon">
+                <input type="checkbox" name="availableShifts" id="afternoon" value="afternoon" />
+                Tarde
+              </label>
+              <label for="night">
+                <input type="checkbox" name="availableShifts" id="night" value="night" />
+                Noite
+              </label>
+            </div>
+
+            <p>Qual linguagem de programação você tem ?*</p>
+            <div class="radio-inputs-wrapper">
+                <label for="graduated">
+          <input type="radio" name="graduated" />
+          Python
+        </label>
+        <label for="studyingMasters">
+          <input type="radio" name="schooling" />
+          JavaScript
+        </label>
+        <label for="mastersDegreeComplete">
+          <input type="radio" name="schooling" />
+          PHP
+        </label>
+        <label for="studyingDoctorate">
+          <input type="radio" name="schooling" />
+          C#
+        </label>
+        <label for="doutoradocompleto">
+          <input type="radio" name="schooling" />
+          Java
+        </label>
+
+      </div>
+
+      <label for="name">Fale um pouco sobre você.</label>
+         <textarea name="description"id="description"></textarea>
+      <label for="file">Arquivo</label>
+      <input type="file" name="image" id="image"/>
+      
+      <footer>
+        <button class="submit-button">Enviar</button>
+      </footer>
+        </div>
+    </form>
+     </section>
+     
+</body>
+<script src="./"></script>
+</html>
